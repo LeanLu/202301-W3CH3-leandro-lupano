@@ -4,7 +4,7 @@ import { Header } from './header';
 
 describe('Given Header component', () => {
   describe('When new Header is instanced', () => {
-    test('Then it should instance a new header class', () => {
+    test('Then it should create an object with the header class', () => {
       document.body.innerHTML = `<slot></slot>`;
       const mockTitle = 'Test';
       const element = new Header('slot', mockTitle);
